@@ -1,0 +1,411 @@
+Test Results
+
+	Domain Name System (DNS) lookups
+
+	seconds
+	type
+	target
+	results
+	nameserver
+
+	[000.000]
+	DNS LOOKUPS
+
+	[000.001]
+	SEARCHLIST		1.1.1.1
+2001:4860:4860::8888
+2001:4860:4860::8844
+8.8.8.8
+8.8.4.4
+
+	[000.093]
+	MX	mailinator.com	1 mail.mailinator.com
+1 mail2.mailinator.com	1.1.1.1
+
+	[000.185]
+	MX:A	mail.mailinator.com	23.239.11.30	1.1.1.1
+
+	[000.373]
+	MX:A	mail2.mailinator.com	45.33.83.75	1.1.1.1
+
+Checking mailinator.com:
+from www11-do.CheckTLS.com(V03.99.14/1.1.1g) at 2026-11-05T17:35:51Z
+
+	seconds
+
+	Test Steps and Results
+
+	[000.001]
+
+	Trying TLS on mail.mailinator.com[23.239.11.30:25] (1) @2026-11-05T17:35:51.282906Z (S)
+
+	[000.007]
+
+	Server answered
+
+	[000.009]
+	<‑‑
+	220 Mailinator.com ESMTP MailinatorSMTP
+
+	[000.009]
+
+	We are allowed to connect
+
+	[000.009]
+	 ‑‑>
+	EHLO www11-do.CheckTLS.com
+
+	[000.011]
+	<‑‑
+	250-mail.mailinator.com
+250-8BITMIME
+250-STARTTLS
+250 Ok
+
+	[000.011]
+
+	We can use this server
+
+	[000.011]
+
+	TLS is an option on this server
+
+	[000.012]
+	 ‑‑>
+	STARTTLS
+
+	[000.013]
+	<‑‑
+	220 Ready to start TLS
+
+	[000.014]
+
+	STARTTLS command works on this server
+
+	[000.014]
+
+	SSL_ocsp_mode = SSL_OCSP_FULL_CHAIN
+
+	[000.041]
+
+	Connection converted to SSL/TLS
+
+	SSLVersion in use: TLSv1_3
+
+	TLS_AES_256_GCM_SHA384 (quality:5 on a scale of 0 to 5)
+
+	Perfect Forward Secrecy: yes
+
+	Session Algorithm in use: X25519(253 bits)
+
+	Key Exchange Quality: good (quality:4 on a scale of 0 to 5)
+
+	Certificate #1 of 1 (sent by MX):
+
+	Cert VALIDATION ERROR(S): self signed certificate
+
+	So email is encrypted but the recipient domain is not verified
+
+	Cert Hostname DOES NOT VERIFY (mail.mailinator.com != Unknown)
+
+	(turning on Send SNI might fix this: Try It)
+
+	So email is encrypted but the host is not verified
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Oct 21 15:03:21 2019 GMT
+
+	Not Valid After: Aug  4 15:03:21 2293 GMT
+
+	Seconds Until Expired: 8417683649
+
+	subject: /C=US/ST=Unknown/L=Unknown/O=Mailinator/OU=Mailinator/CN=Unknown
+
+	issuer: /C=US/ST=Unknown/L=Unknown/O=Mailinator/OU=Mailinator/CN=Unknown
+
+	[000.046]
+	 ~~>
+	EHLO www11-do.CheckTLS.com
+
+	[000.050]
+	<~~
+	250-mail.mailinator.com
+250-8BITMIME
+250-STARTTLS
+250 Ok
+
+	[000.050]
+
+	SSL/TLS is working correctly on this server
+
+	[000.050]
+
+	warning: STARTTLS after second EHLO (see RFC3207 #4.2)
+
+	[000.050]
+	 ~~>
+	MAIL FROM:<test@checktls.com>
+
+	[000.052]
+	<~~
+	250 Ok
+
+	[000.053]
+
+	Sender is OK
+
+	[000.053]
+	 ~~>
+	QUIT
+
+	[000.055]
+	<~~
+	221 Bye
+
+	seconds
+
+	Test Steps and Results
+
+	[000.001]
+
+	Trying TLS on mail2.mailinator.com[45.33.83.75:25] (1) @2026-11-05T17:35:51.341013Z (S)
+
+	[000.005]
+
+	Server answered
+
+	[000.008]
+	<‑‑
+	220 Mailinator.com ESMTP MailinatorSMTP
+
+	[000.008]
+
+	We are allowed to connect
+
+	[000.008]
+	 ‑‑>
+	EHLO www11-do.CheckTLS.com
+
+	[000.010]
+	<‑‑
+	250-mail.mailinator.com
+250-8BITMIME
+250-STARTTLS
+250 Ok
+
+	[000.010]
+
+	We can use this server
+
+	[000.010]
+
+	TLS is an option on this server
+
+	[000.010]
+	 ‑‑>
+	STARTTLS
+
+	[000.012]
+	<‑‑
+	220 Ready to start TLS
+
+	[000.013]
+
+	STARTTLS command works on this server
+
+	[000.013]
+
+	SSL_ocsp_mode = SSL_OCSP_FULL_CHAIN
+
+	[000.039]
+
+	Connection converted to SSL/TLS
+
+	SSLVersion in use: TLSv1_3
+
+	TLS_AES_256_GCM_SHA384 (quality:5 on a scale of 0 to 5)
+
+	Perfect Forward Secrecy: yes
+
+	Session Algorithm in use: X25519(253 bits)
+
+	Key Exchange Quality: good (quality:4 on a scale of 0 to 5)
+
+	Certificate #1 of 1 (sent by MX): EXPIRED
+
+	Cert VALIDATION ERROR(S): self signed certificate; certificate has expired
+
+	So email is encrypted but the recipient domain is not verified
+
+	Cert Hostname VERIFIED (mail2.mailinator.com = mail2.mailinator.com)
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Mar 28 15:54:08 2024 GMT
+
+	Not Valid After: Mar 23 15:54:08 2025 GMT
+
+	Seconds Until Expired: -51154903
+
+	subject: /C=US/ST=Unknown/L=Unknown/O=Unknown/OU=Unknown/CN=mail2.mailinator.com
+
+	issuer: /C=US/ST=Unknown/L=Unknown/O=Unknown/OU=Unknown/CN=mail2.mailinator.com
+
+	[000.042]
+	 ~~>
+	EHLO www11-do.CheckTLS.com
+
+	[000.045]
+	<~~
+	250-mail.mailinator.com
+250-8BITMIME
+250-STARTTLS
+250 Ok
+
+	[000.045]
+
+	SSL/TLS is working correctly on this server
+
+	[000.045]
+
+	warning: STARTTLS after second EHLO (see RFC3207 #4.2)
+
+	[000.045]
+	 ~~>
+	MAIL FROM:<test@checktls.com>
+
+	[000.047]
+	<~~
+	250 Ok
+
+	[000.047]
+
+	Sender is OK
+
+	[000.048]
+	 ~~>
+	QUIT
+
+	[000.050]
+	<~~
+	221 Bye
+
+CheckTLS ConfidenceFactor for "mailinator.com": 111
+ of 116 (95%, 125 max)
+
+Get alerted if this email fails in the future!
+
+Automate any test(s) with a Subscription
+
+Test Steps (result and time):
+
+	MX Server
+	Pref
+	Answer
+	Connect
+	HELO
+	TLS
+	Secure
+	Cert
+	From
+	MTASTS
+	DANE
+	FCRDNS
+	Score
+
+mail.mailinator.com
+
+[23.239.11.30:25]
+
+	1
+
+  PASS
+
+  (7/7ms)
+
+  PASS
+
+  (2/9ms)
+
+  PASS
+
+  (2/11ms)
+
+  PASS
+
+  (2/14ms)
+
+  WARN
+
+  (28/41ms)
+
+  WARN
+
+  (3/44ms)
+
+  PASS
+
+  (9/53ms)
+
+	not tested
+	not tested
+	not tested
+	110.00
+
+mail2.mailinator.com
+
+[45.33.83.75:25]
+
+	1
+
+  PASS
+
+  (5/5ms)
+
+  PASS
+
+  (3/8ms)
+
+  PASS
+
+  (2/10ms)
+
+  PASS
+
+  (2/13ms)
+
+  WARN
+
+  (26/39ms)
+
+  WARN
+
+  (3/41ms)
+
+  PASS
+
+  (6/47ms)
+
+	not tested
+	not tested
+	not tested
+	112.00
+
+	Average
+
+	100%
+	100%
+	100%
+	100%
+	100%
+	100%
+	100%
+
+Scan down DETAIL output below for info on errors and warnings.
+
+    Copyright © 2010-2026 SecurEmail, LLC.  All Rights Reserved.
+    Any use of this site is explicit agreement to Terms of Use
+    We welcome links to our site and any feedback: Contact Us
+
+    CheckTLS.com™, EmailSentry™, and SniffINet™ are TradeMarks, and ForceTLSSM, MonitorTLSSM, "Verified TLS"SM are ServiceMarks, of SecurEmail, LLC.

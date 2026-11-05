@@ -1,0 +1,1173 @@
+Test Results
+
+	Domain Name System (DNS) lookups
+
+	seconds
+	type
+	target
+	results
+	nameserver
+
+	[000.001]
+	DNS LOOKUPS
+
+	[000.001]
+	SEARCHLIST		1.1.1.1
+2001:4860:4860::8888
+2001:4860:4860::8844
+8.8.8.8
+8.8.4.4
+
+	[000.118]
+	MX	gmail.com	30 alt3.gmail-smtp-in.l.google.com
+40 alt4.gmail-smtp-in.l.google.com
+5 gmail-smtp-in.l.google.com
+20 alt2.gmail-smtp-in.l.google.com
+10 alt1.gmail-smtp-in.l.google.com	1.1.1.1
+
+	[000.234]
+	MX:A	gmail-smtp-in.l.google.com	142.251.167.27	1.1.1.1
+
+	[000.514]
+	MX:A	alt1.gmail-smtp-in.l.google.com	192.178.234.27	1.1.1.1
+
+	[000.841]
+	MX:A	alt2.gmail-smtp-in.l.google.com	172.253.116.26	1.1.1.1
+
+	[001.303]
+	MX:A	alt3.gmail-smtp-in.l.google.com	192.178.223.27	1.1.1.1
+
+	[001.600]
+	MX:A	alt4.gmail-smtp-in.l.google.com	172.253.157.27	1.1.1.1
+
+Checking gmail.com:
+from www12-do.checktls.com(V03.99.14/1.1.1k) at 2026-11-05T17:35:44Z
+
+	seconds
+
+	Test Steps and Results
+
+	[000.001]
+
+	Trying TLS on gmail-smtp-in.l.google.com[142.251.167.27:25] (5) @2026-11-05T17:35:44.980266Z (S)
+
+	[000.010]
+
+	Server answered
+
+	[000.041]
+	<‑‑
+	220 mx.google.com ESMTP d75a77b69052e-54dd695cf09si5930241cf.272 - gsmtp
+
+	[000.042]
+
+	We are allowed to connect
+
+	[000.042]
+	 ‑‑>
+	EHLO www12-do.checktls.com
+
+	[000.060]
+	<‑‑
+	250-mx.google.com at your service, [142.93.73.156]
+250-SIZE 157286400
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250-SMTPUTF8
+250 LIMITS MAILMAX=1000 RCPTMAX=100 RCPTDOMAINMAX=1
+
+	[000.060]
+
+	We can use this server
+
+	[000.060]
+
+	TLS is an option on this server
+
+	[000.061]
+	 ‑‑>
+	STARTTLS
+
+	[000.075]
+	<‑‑
+	220 2.0.0 Ready to start TLS
+
+	[000.076]
+
+	STARTTLS command works on this server
+
+	[000.076]
+
+	SSL_ocsp_mode = SSL_OCSP_FULL_CHAIN
+
+	[000.113]
+
+	Connection converted to SSL/TLS
+
+	SSLVersion in use: TLSv1_3
+
+	TLS_AES_256_GCM_SHA384 (quality:5 on a scale of 0 to 5)
+
+	Perfect Forward Secrecy: yes
+
+	Session Algorithm in use: X25519(253 bits)
+
+	Key Exchange Quality: good (quality:4 on a scale of 0 to 5)
+
+	Certificate #1 of 4 (sent by MX):
+
+	Cert VALIDATED: ok
+
+	Cert Hostname VERIFIED (gmail-smtp-in.l.google.com = mx.google.com | DNS:mx.google.com | DNS:smtp.google.com | DNS:aspmx.l.google.com | DNS:alt1.aspmx.l.google.com | DNS:alt2.aspmx.l.google.com | DNS:alt3.aspmx.l.google.com | DNS:alt4.aspmx.l.google.com | DNS:gmail-smtp-in.l.google.com | DNS:alt1.gmail-smtp-in.l.google.com | DNS:alt2.gmail-smtp-in.l.google.com | DNS:alt3.gmail-smtp-in.l.google.com | DNS:alt4.gmail-smtp-in.l.google.com | DNS:gmr-smtp-in.l.google.com | DNS:alt1.gmr-smtp-in.l.google.com | DNS:alt2.gmr-smtp-in.l.google.com | DNS:alt3.gmr-smtp-in.l.google.com | DNS:alt4.gmr-smtp-in.l.google.com | DNS:mx1.smtp.goog | DNS:mx2.smtp.goog | DNS:mx3.smtp.goog | DNS:mx4.smtp.goog | DNS:aspmx2.googlemail.com | DNS:aspmx3.googlemail.com | DNS:aspmx4.googlemail.com | DNS:aspmx5.googlemail.com | DNS:gmr-mx.google.com)
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Oct  7 19:09:08 2026 GMT
+
+	Not Valid After: Dec 30 19:09:07 2026 GMT
+
+	Seconds Until Expired: 4757601
+
+	subject: /CN=mx.google.com
+
+	issuer: /C=US/O=Google Trust Services/CN=WE2
+
+	Certificate #2 of 4 (sent by MX):
+
+	Cert VALIDATED: ok
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Dec 13 09:00:00 2023 GMT
+
+	Not Valid After: Feb 20 14:00:00 2029 GMT
+
+	Seconds Until Expired: 72390254
+
+	subject: /C=US/O=Google Trust Services/CN=WE2
+
+	issuer: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	Certificate #3 of 4 (added from CA Root Store):
+
+	Cert VALIDATED: ok
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Jun 22 00:00:00 2016 GMT
+
+	Not Valid After: Jun 22 00:00:00 2036 GMT
+
+	Seconds Until Expired: 303805454
+
+	subject: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	issuer: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	Certificate #4 of 4 (sent by MX):
+
+	Cert VALIDATED:
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Nov 15 03:43:21 2023 GMT
+
+	Not Valid After: Jan 28 00:00:42 2028 GMT
+
+	Seconds Until Expired: 38730296
+
+	subject: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	issuer: /C=BE/O=GlobalSign nv-sa/OU=Root CA/CN=GlobalSign Root CA
+
+	[000.124]
+	 ~~>
+	EHLO www12-do.checktls.com
+
+	[000.139]
+	<~~
+	250-mx.google.com at your service, [142.93.73.156]
+250-SIZE 157286400
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250-SMTPUTF8
+250 LIMITS MAILMAX=1000 RCPTMAX=100 RCPTDOMAINMAX=1
+
+	[000.139]
+
+	SSL/TLS is working correctly on this server
+
+	[000.140]
+	 ~~>
+	MAIL FROM:<test@checktls.com>
+
+	[000.154]
+	<~~
+	250 2.1.0 OK d75a77b69052e-54dd695cf09si5930241cf.272 - gsmtp
+
+	[000.155]
+
+	Sender is OK
+
+	[000.155]
+	 ~~>
+	QUIT
+
+	[000.177]
+	<~~
+	221 2.0.0 closing connection d75a77b69052e-54dd695cf09si5930241cf.272 - gsmtp
+
+	seconds
+
+	Test Steps and Results
+
+	[000.001]
+
+	Trying TLS on alt1.gmail-smtp-in.l.google.com[192.178.234.27:25] (10) @2026-11-05T17:35:45.161721Z (S)
+
+	[000.126]
+
+	Server answered
+
+	[000.438]
+	<‑‑
+	220 mx.google.com ESMTP 956f58d0204a3-67c133526e7si126403d50.11 - gsmtp
+
+	[000.438]
+
+	We are allowed to connect
+
+	[000.438]
+	 ‑‑>
+	EHLO www12-do.checktls.com
+
+	[000.735]
+	<‑‑
+	250-mx.google.com at your service, [142.93.73.156]
+250-SIZE 157286400
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250-SMTPUTF8
+250 LIMITS MAILMAX=1000 RCPTMAX=100 RCPTDOMAINMAX=1
+
+	[000.735]
+
+	We can use this server
+
+	[000.736]
+
+	TLS is an option on this server
+
+	[000.736]
+	 ‑‑>
+	STARTTLS
+
+	[001.026]
+	<‑‑
+	220 2.0.0 Ready to start TLS
+
+	[001.026]
+
+	STARTTLS command works on this server
+
+	[001.026]
+
+	SSL_ocsp_mode = SSL_OCSP_FULL_CHAIN
+
+	[001.179]
+
+	Connection converted to SSL/TLS
+
+	SSLVersion in use: TLSv1_3
+
+	TLS_AES_256_GCM_SHA384 (quality:5 on a scale of 0 to 5)
+
+	Perfect Forward Secrecy: yes
+
+	Session Algorithm in use: X25519(253 bits)
+
+	Key Exchange Quality: good (quality:4 on a scale of 0 to 5)
+
+	Certificate #1 of 4 (sent by MX):
+
+	Cert VALIDATED: ok
+
+	Cert Hostname VERIFIED (alt1.gmail-smtp-in.l.google.com = mx.google.com | DNS:mx.google.com | DNS:smtp.google.com | DNS:aspmx.l.google.com | DNS:alt1.aspmx.l.google.com | DNS:alt2.aspmx.l.google.com | DNS:alt3.aspmx.l.google.com | DNS:alt4.aspmx.l.google.com | DNS:gmail-smtp-in.l.google.com | DNS:alt1.gmail-smtp-in.l.google.com | DNS:alt2.gmail-smtp-in.l.google.com | DNS:alt3.gmail-smtp-in.l.google.com | DNS:alt4.gmail-smtp-in.l.google.com | DNS:gmr-smtp-in.l.google.com | DNS:alt1.gmr-smtp-in.l.google.com | DNS:alt2.gmr-smtp-in.l.google.com | DNS:alt3.gmr-smtp-in.l.google.com | DNS:alt4.gmr-smtp-in.l.google.com | DNS:mx1.smtp.goog | DNS:mx2.smtp.goog | DNS:mx3.smtp.goog | DNS:mx4.smtp.goog | DNS:aspmx2.googlemail.com | DNS:aspmx3.googlemail.com | DNS:aspmx4.googlemail.com | DNS:aspmx5.googlemail.com | DNS:gmr-mx.google.com)
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Oct  7 19:09:08 2026 GMT
+
+	Not Valid After: Dec 30 19:09:07 2026 GMT
+
+	Seconds Until Expired: 4757600
+
+	subject: /CN=mx.google.com
+
+	issuer: /C=US/O=Google Trust Services/CN=WE2
+
+	Certificate #2 of 4 (sent by MX):
+
+	Cert VALIDATED: ok
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Dec 13 09:00:00 2023 GMT
+
+	Not Valid After: Feb 20 14:00:00 2029 GMT
+
+	Seconds Until Expired: 72390253
+
+	subject: /C=US/O=Google Trust Services/CN=WE2
+
+	issuer: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	Certificate #3 of 4 (added from CA Root Store):
+
+	Cert VALIDATED: ok
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Jun 22 00:00:00 2016 GMT
+
+	Not Valid After: Jun 22 00:00:00 2036 GMT
+
+	Seconds Until Expired: 303805453
+
+	subject: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	issuer: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	Certificate #4 of 4 (sent by MX):
+
+	Cert VALIDATED:
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Nov 15 03:43:21 2023 GMT
+
+	Not Valid After: Jan 28 00:00:42 2028 GMT
+
+	Seconds Until Expired: 38730295
+
+	subject: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	issuer: /C=BE/O=GlobalSign nv-sa/OU=Root CA/CN=GlobalSign Root CA
+
+	[001.192]
+	 ~~>
+	EHLO www12-do.checktls.com
+
+	[001.606]
+	<~~
+	250-mx.google.com at your service, [142.93.73.156]
+250-SIZE 157286400
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250-SMTPUTF8
+250 LIMITS MAILMAX=1000 RCPTMAX=100 RCPTDOMAINMAX=1
+
+	[001.606]
+
+	SSL/TLS is working correctly on this server
+
+	[001.606]
+	 ~~>
+	MAIL FROM:<test@checktls.com>
+
+	[001.908]
+	<~~
+	250 2.1.0 OK 956f58d0204a3-67c133526e7si126403d50.11 - gsmtp
+
+	[001.908]
+
+	Sender is OK
+
+	[001.908]
+	 ~~>
+	QUIT
+
+	[002.196]
+	<~~
+	221 2.0.0 closing connection 956f58d0204a3-67c133526e7si126403d50.11 - gsmtp
+
+	seconds
+
+	Test Steps and Results
+
+	[000.001]
+
+	Trying TLS on alt2.gmail-smtp-in.l.google.com[172.253.116.26:25] (20) @2026-11-05T17:35:47.363928Z (S)
+
+	[000.088]
+
+	Server answered
+
+	[000.178]
+	<‑‑
+	220 mx.google.com ESMTP ffacd0b85a97d-48fef3f32cesi10133572f8f.312 - gsmtp
+
+	[000.178]
+
+	We are allowed to connect
+
+	[000.178]
+	 ‑‑>
+	EHLO www12-do.checktls.com
+
+	[000.279]
+	<‑‑
+	250-mx.google.com at your service, [142.93.73.156]
+250-SIZE 157286400
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250-SMTPUTF8
+250 LIMITS MAILMAX=1000 RCPTMAX=100 RCPTDOMAINMAX=1
+
+	[000.280]
+
+	We can use this server
+
+	[000.280]
+
+	TLS is an option on this server
+
+	[000.280]
+	 ‑‑>
+	STARTTLS
+
+	[000.372]
+	<‑‑
+	220 2.0.0 Ready to start TLS
+
+	[000.373]
+
+	STARTTLS command works on this server
+
+	[000.373]
+
+	SSL_ocsp_mode = SSL_OCSP_FULL_CHAIN
+
+	[000.481]
+
+	Connection converted to SSL/TLS
+
+	SSLVersion in use: TLSv1_3
+
+	TLS_AES_256_GCM_SHA384 (quality:5 on a scale of 0 to 5)
+
+	Perfect Forward Secrecy: yes
+
+	Session Algorithm in use: X25519(253 bits)
+
+	Key Exchange Quality: good (quality:4 on a scale of 0 to 5)
+
+	Certificate #1 of 4 (sent by MX):
+
+	Cert VALIDATED: ok
+
+	Cert Hostname VERIFIED (alt2.gmail-smtp-in.l.google.com = mx.google.com | DNS:mx.google.com | DNS:smtp.google.com | DNS:aspmx.l.google.com | DNS:alt1.aspmx.l.google.com | DNS:alt2.aspmx.l.google.com | DNS:alt3.aspmx.l.google.com | DNS:alt4.aspmx.l.google.com | DNS:gmail-smtp-in.l.google.com | DNS:alt1.gmail-smtp-in.l.google.com | DNS:alt2.gmail-smtp-in.l.google.com | DNS:alt3.gmail-smtp-in.l.google.com | DNS:alt4.gmail-smtp-in.l.google.com | DNS:gmr-smtp-in.l.google.com | DNS:alt1.gmr-smtp-in.l.google.com | DNS:alt2.gmr-smtp-in.l.google.com | DNS:alt3.gmr-smtp-in.l.google.com | DNS:alt4.gmr-smtp-in.l.google.com | DNS:mx1.smtp.goog | DNS:mx2.smtp.goog | DNS:mx3.smtp.goog | DNS:mx4.smtp.goog | DNS:aspmx2.googlemail.com | DNS:aspmx3.googlemail.com | DNS:aspmx4.googlemail.com | DNS:aspmx5.googlemail.com | DNS:gmr-mx.google.com)
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Oct  7 19:09:08 2026 GMT
+
+	Not Valid After: Dec 30 19:09:07 2026 GMT
+
+	Seconds Until Expired: 4757599
+
+	subject: /CN=mx.google.com
+
+	issuer: /C=US/O=Google Trust Services/CN=WE2
+
+	Certificate #2 of 4 (sent by MX):
+
+	Cert VALIDATED: ok
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Dec 13 09:00:00 2023 GMT
+
+	Not Valid After: Feb 20 14:00:00 2029 GMT
+
+	Seconds Until Expired: 72390252
+
+	subject: /C=US/O=Google Trust Services/CN=WE2
+
+	issuer: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	Certificate #3 of 4 (added from CA Root Store):
+
+	Cert VALIDATED: ok
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Jun 22 00:00:00 2016 GMT
+
+	Not Valid After: Jun 22 00:00:00 2036 GMT
+
+	Seconds Until Expired: 303805452
+
+	subject: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	issuer: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	Certificate #4 of 4 (sent by MX):
+
+	Cert VALIDATED:
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Nov 15 03:43:21 2023 GMT
+
+	Not Valid After: Jan 28 00:00:42 2028 GMT
+
+	Seconds Until Expired: 38730294
+
+	subject: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	issuer: /C=BE/O=GlobalSign nv-sa/OU=Root CA/CN=GlobalSign Root CA
+
+	[000.514]
+	 ~~>
+	EHLO www12-do.checktls.com
+
+	[000.667]
+	<~~
+	250-mx.google.com at your service, [142.93.73.156]
+250-SIZE 157286400
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250-SMTPUTF8
+250 LIMITS MAILMAX=1000 RCPTMAX=100 RCPTDOMAINMAX=1
+
+	[000.668]
+
+	SSL/TLS is working correctly on this server
+
+	[000.668]
+	 ~~>
+	MAIL FROM:<test@checktls.com>
+
+	[000.761]
+	<~~
+	250 2.1.0 OK ffacd0b85a97d-48fef3f32cesi10133572f8f.312 - gsmtp
+
+	[000.761]
+
+	Sender is OK
+
+	[000.761]
+	 ~~>
+	QUIT
+
+	[000.857]
+	<~~
+	221 2.0.0 closing connection ffacd0b85a97d-48fef3f32cesi10133572f8f.312 - gsmtp
+
+	seconds
+
+	Test Steps and Results
+
+	[000.001]
+
+	Trying TLS on alt3.gmail-smtp-in.l.google.com[192.178.223.27:25] (30) @2026-11-05T17:35:48.226294Z (S)
+
+	[000.081]
+
+	Server answered
+
+	[000.153]
+	<‑‑
+	220 mx.google.com ESMTP ffacd0b85a97d-48feff73ef2si11399018f8f.390 - gsmtp
+
+	[000.153]
+
+	We are allowed to connect
+
+	[000.153]
+	 ‑‑>
+	EHLO www12-do.checktls.com
+
+	[000.233]
+	<‑‑
+	250-mx.google.com at your service, [142.93.73.156]
+250-SIZE 157286400
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250-SMTPUTF8
+250 LIMITS MAILMAX=1000 RCPTMAX=100 RCPTDOMAINMAX=1
+
+	[000.233]
+
+	We can use this server
+
+	[000.233]
+
+	TLS is an option on this server
+
+	[000.234]
+	 ‑‑>
+	STARTTLS
+
+	[000.317]
+	<‑‑
+	220 2.0.0 Ready to start TLS
+
+	[000.318]
+
+	STARTTLS command works on this server
+
+	[000.318]
+
+	SSL_ocsp_mode = SSL_OCSP_FULL_CHAIN
+
+	[000.425]
+
+	Connection converted to SSL/TLS
+
+	SSLVersion in use: TLSv1_3
+
+	TLS_AES_256_GCM_SHA384 (quality:5 on a scale of 0 to 5)
+
+	Perfect Forward Secrecy: yes
+
+	Session Algorithm in use: X25519(253 bits)
+
+	Key Exchange Quality: good (quality:4 on a scale of 0 to 5)
+
+	Certificate #1 of 4 (sent by MX):
+
+	Cert VALIDATED: ok
+
+	Cert Hostname VERIFIED (alt3.gmail-smtp-in.l.google.com = mx.google.com | DNS:mx.google.com | DNS:smtp.google.com | DNS:aspmx.l.google.com | DNS:alt1.aspmx.l.google.com | DNS:alt2.aspmx.l.google.com | DNS:alt3.aspmx.l.google.com | DNS:alt4.aspmx.l.google.com | DNS:gmail-smtp-in.l.google.com | DNS:alt1.gmail-smtp-in.l.google.com | DNS:alt2.gmail-smtp-in.l.google.com | DNS:alt3.gmail-smtp-in.l.google.com | DNS:alt4.gmail-smtp-in.l.google.com | DNS:gmr-smtp-in.l.google.com | DNS:alt1.gmr-smtp-in.l.google.com | DNS:alt2.gmr-smtp-in.l.google.com | DNS:alt3.gmr-smtp-in.l.google.com | DNS:alt4.gmr-smtp-in.l.google.com | DNS:mx1.smtp.goog | DNS:mx2.smtp.goog | DNS:mx3.smtp.goog | DNS:mx4.smtp.goog | DNS:aspmx2.googlemail.com | DNS:aspmx3.googlemail.com | DNS:aspmx4.googlemail.com | DNS:aspmx5.googlemail.com | DNS:gmr-mx.google.com)
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Oct  7 19:09:08 2026 GMT
+
+	Not Valid After: Dec 30 19:09:07 2026 GMT
+
+	Seconds Until Expired: 4757598
+
+	subject: /CN=mx.google.com
+
+	issuer: /C=US/O=Google Trust Services/CN=WE2
+
+	Certificate #2 of 4 (sent by MX):
+
+	Cert VALIDATED: ok
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Dec 13 09:00:00 2023 GMT
+
+	Not Valid After: Feb 20 14:00:00 2029 GMT
+
+	Seconds Until Expired: 72390251
+
+	subject: /C=US/O=Google Trust Services/CN=WE2
+
+	issuer: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	Certificate #3 of 4 (added from CA Root Store):
+
+	Cert VALIDATED: ok
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Jun 22 00:00:00 2016 GMT
+
+	Not Valid After: Jun 22 00:00:00 2036 GMT
+
+	Seconds Until Expired: 303805451
+
+	subject: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	issuer: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	Certificate #4 of 4 (sent by MX):
+
+	Cert VALIDATED:
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Nov 15 03:43:21 2023 GMT
+
+	Not Valid After: Jan 28 00:00:42 2028 GMT
+
+	Seconds Until Expired: 38730293
+
+	subject: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	issuer: /C=BE/O=GlobalSign nv-sa/OU=Root CA/CN=GlobalSign Root CA
+
+	[000.437]
+	 ~~>
+	EHLO www12-do.checktls.com
+
+	[000.582]
+	<~~
+	250-mx.google.com at your service, [142.93.73.156]
+250-SIZE 157286400
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250-SMTPUTF8
+250 LIMITS MAILMAX=1000 RCPTMAX=100 RCPTDOMAINMAX=1
+
+	[000.583]
+
+	SSL/TLS is working correctly on this server
+
+	[000.583]
+	 ~~>
+	MAIL FROM:<test@checktls.com>
+
+	[000.661]
+	<~~
+	250 2.1.0 OK ffacd0b85a97d-48feff73ef2si11399018f8f.390 - gsmtp
+
+	[000.662]
+
+	Sender is OK
+
+	[000.662]
+	 ~~>
+	QUIT
+
+	[000.742]
+	<~~
+	221 2.0.0 closing connection ffacd0b85a97d-48feff73ef2si11399018f8f.390 - gsmtp
+
+	seconds
+
+	Test Steps and Results
+
+	[000.001]
+
+	Trying TLS on alt4.gmail-smtp-in.l.google.com[172.253.157.27:25] (40) @2026-11-05T17:35:48.973151Z (S)
+
+	[000.078]
+
+	Server answered
+
+	[000.159]
+	<‑‑
+	220 mx.google.com ESMTP ffacd0b85a97d-48fedd00a64si11249213f8f.222 - gsmtp
+
+	[000.159]
+
+	We are allowed to connect
+
+	[000.159]
+	 ‑‑>
+	EHLO www12-do.checktls.com
+
+	[000.244]
+	<‑‑
+	250-mx.google.com at your service, [142.93.73.156]
+250-SIZE 157286400
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250-SMTPUTF8
+250 LIMITS MAILMAX=1000 RCPTMAX=100 RCPTDOMAINMAX=1
+
+	[000.244]
+
+	We can use this server
+
+	[000.245]
+
+	TLS is an option on this server
+
+	[000.245]
+	 ‑‑>
+	STARTTLS
+
+	[000.331]
+	<‑‑
+	220 2.0.0 Ready to start TLS
+
+	[000.331]
+
+	STARTTLS command works on this server
+
+	[000.331]
+
+	SSL_ocsp_mode = SSL_OCSP_FULL_CHAIN
+
+	[000.440]
+
+	Connection converted to SSL/TLS
+
+	SSLVersion in use: TLSv1_3
+
+	TLS_AES_256_GCM_SHA384 (quality:5 on a scale of 0 to 5)
+
+	Perfect Forward Secrecy: yes
+
+	Session Algorithm in use: X25519(253 bits)
+
+	Key Exchange Quality: good (quality:4 on a scale of 0 to 5)
+
+	Certificate #1 of 4 (sent by MX):
+
+	Cert VALIDATED: ok
+
+	Cert Hostname VERIFIED (alt4.gmail-smtp-in.l.google.com = mx.google.com | DNS:mx.google.com | DNS:smtp.google.com | DNS:aspmx.l.google.com | DNS:alt1.aspmx.l.google.com | DNS:alt2.aspmx.l.google.com | DNS:alt3.aspmx.l.google.com | DNS:alt4.aspmx.l.google.com | DNS:gmail-smtp-in.l.google.com | DNS:alt1.gmail-smtp-in.l.google.com | DNS:alt2.gmail-smtp-in.l.google.com | DNS:alt3.gmail-smtp-in.l.google.com | DNS:alt4.gmail-smtp-in.l.google.com | DNS:gmr-smtp-in.l.google.com | DNS:alt1.gmr-smtp-in.l.google.com | DNS:alt2.gmr-smtp-in.l.google.com | DNS:alt3.gmr-smtp-in.l.google.com | DNS:alt4.gmr-smtp-in.l.google.com | DNS:mx1.smtp.goog | DNS:mx2.smtp.goog | DNS:mx3.smtp.goog | DNS:mx4.smtp.goog | DNS:aspmx2.googlemail.com | DNS:aspmx3.googlemail.com | DNS:aspmx4.googlemail.com | DNS:aspmx5.googlemail.com | DNS:gmr-mx.google.com)
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Oct  7 19:09:08 2026 GMT
+
+	Not Valid After: Dec 30 19:09:07 2026 GMT
+
+	Seconds Until Expired: 4757597
+
+	subject: /CN=mx.google.com
+
+	issuer: /C=US/O=Google Trust Services/CN=WE2
+
+	Certificate #2 of 4 (sent by MX):
+
+	Cert VALIDATED: ok
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Dec 13 09:00:00 2023 GMT
+
+	Not Valid After: Feb 20 14:00:00 2029 GMT
+
+	Seconds Until Expired: 72390250
+
+	subject: /C=US/O=Google Trust Services/CN=WE2
+
+	issuer: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	Certificate #3 of 4 (added from CA Root Store):
+
+	Cert VALIDATED: ok
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Jun 22 00:00:00 2016 GMT
+
+	Not Valid After: Jun 22 00:00:00 2036 GMT
+
+	Seconds Until Expired: 303805450
+
+	subject: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	issuer: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	Certificate #4 of 4 (sent by MX):
+
+	Cert VALIDATED:
+
+	cert not revoked by OCSP
+
+	Not Valid Before: Nov 15 03:43:21 2023 GMT
+
+	Not Valid After: Jan 28 00:00:42 2028 GMT
+
+	Seconds Until Expired: 38730292
+
+	subject: /C=US/O=Google Trust Services LLC/CN=GTS Root R4
+
+	issuer: /C=BE/O=GlobalSign nv-sa/OU=Root CA/CN=GlobalSign Root CA
+
+	[000.460]
+	 ~~>
+	EHLO www12-do.checktls.com
+
+	[000.608]
+	<~~
+	250-mx.google.com at your service, [142.93.73.156]
+250-SIZE 157286400
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250-SMTPUTF8
+250 LIMITS MAILMAX=1000 RCPTMAX=100 RCPTDOMAINMAX=1
+
+	[000.608]
+
+	SSL/TLS is working correctly on this server
+
+	[000.609]
+	 ~~>
+	MAIL FROM:<test@checktls.com>
+
+	[000.687]
+	<~~
+	250 2.1.0 OK ffacd0b85a97d-48fedd00a64si11249213f8f.222 - gsmtp
+
+	[000.688]
+
+	Sender is OK
+
+	[000.688]
+	 ~~>
+	QUIT
+
+	[000.764]
+	<~~
+	221 2.0.0 closing connection ffacd0b85a97d-48fedd00a64si11249213f8f.222 - gsmtp
+
+CheckTLS ConfidenceFactor for "gmail.com": 116
+ of 116 (100%, 125 max)
+
+Get alerted if this email fails in the future!
+
+Automate any test(s) with a Subscription
+
+Test Steps (result and time):
+
+	MX Server
+	Pref
+	Answer
+	Connect
+	HELO
+	TLS
+	Secure
+	Cert
+	From
+	MTASTS
+	DANE
+	FCRDNS
+	Score
+
+gmail-smtp-in.l.google.com
+
+[142.251.167.27:25]
+
+	5
+
+  PASS
+
+  (10/10ms)
+
+  PASS
+
+  (32/42ms)
+
+  PASS
+
+  (19/60ms)
+
+  PASS
+
+  (15/76ms)
+
+  PASS
+
+  (37/113ms)
+
+  PASS
+
+  (7/120ms)
+
+  PASS
+
+  (34/155ms)
+
+	not tested
+	not tested
+	not tested
+	116.00
+
+alt1.gmail-smtp-in.l.google.com
+
+[192.178.234.27:25]
+
+	10
+
+  PASS
+
+  (125/125ms)
+
+  PASS
+
+  (313/438ms)
+
+  PASS
+
+  (297/735ms)
+
+  PASS
+
+  (291/1026ms)
+
+  PASS
+
+  (153/1179ms)
+
+  PASS
+
+  (7/1186ms)
+
+  PASS
+
+  (722/1908ms)
+
+	not tested
+	not tested
+	not tested
+	116.00
+
+alt2.gmail-smtp-in.l.google.com
+
+[172.253.116.26:25]
+
+	20
+
+  PASS
+
+  (88/88ms)
+
+  PASS
+
+  (91/178ms)
+
+  PASS
+
+  (101/280ms)
+
+  PASS
+
+  (93/373ms)
+
+  PASS
+
+  (108/481ms)
+
+  PASS
+
+  (29/510ms)
+
+  PASS
+
+  (251/761ms)
+
+	not tested
+	not tested
+	not tested
+	116.00
+
+alt3.gmail-smtp-in.l.google.com
+
+[192.178.223.27:25]
+
+	30
+
+  PASS
+
+  (81/81ms)
+
+  PASS
+
+  (72/153ms)
+
+  PASS
+
+  (80/233ms)
+
+  PASS
+
+  (84/318ms)
+
+  PASS
+
+  (107/425ms)
+
+  PASS
+
+  (7/432ms)
+
+  PASS
+
+  (229/662ms)
+
+	not tested
+	not tested
+	not tested
+	116.00
+
+alt4.gmail-smtp-in.l.google.com
+
+[172.253.157.27:25]
+
+	40
+
+  PASS
+
+  (77/77ms)
+
+  PASS
+
+  (82/159ms)
+
+  PASS
+
+  (85/244ms)
+
+  PASS
+
+  (87/331ms)
+
+  PASS
+
+  (109/440ms)
+
+  PASS
+
+  (11/452ms)
+
+  PASS
+
+  (236/688ms)
+
+	not tested
+	not tested
+	not tested
+	116.00
+
+	Average
+
+	100%
+	100%
+	100%
+	100%
+	100%
+	100%
+	100%
+
+    Copyright © 2010-2026 SecurEmail, LLC.  All Rights Reserved.
+    Any use of this site is explicit agreement to Terms of Use
+    We welcome links to our site and any feedback: Contact Us
+
+    CheckTLS.com™, EmailSentry™, and SniffINet™ are TradeMarks, and ForceTLSSM, MonitorTLSSM, "Verified TLS"SM are ServiceMarks, of SecurEmail, LLC.
