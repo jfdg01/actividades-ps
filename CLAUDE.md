@@ -10,7 +10,7 @@ Una carpeta por tema: `ps-3/` (Tema 3), `ps-4/` (Tema 4, sin entregar) y `ps-5/`
 cd ps-5 && CHROME_PATH=/usr/bin/google-chrome npx -y @marp-team/marp-cli@latest diapositivas-quic-bolivar-dibo.md --pdf --allow-local-files
 ```
 
-`--allow-local-files` deja a Marp leer `img/`. El PDF es una salida del build, como el del informe.
+`--allow-local-files` deja a Marp leer `img/`. El PDF es una salida del build y entra en git, como el del informe.
 
 ## Build a report PDF
 
@@ -33,4 +33,4 @@ Fonts ship with `md-to-pdf`. A fresh machine needs `bash ~/md-to-pdf/install.sh`
 ## Rules
 
 - A figure in the report goes in `img/` and is referenced as `img/<name>.png`.
-- The PDF is a build output. Rebuild it from the `.md`; do not edit it.
+- El PDF es una salida del build: se reconstruye desde el `.md` y no se edita. Entra en git junto a su `.md`, porque es lo que se entrega.
