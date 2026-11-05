@@ -1,6 +1,16 @@
 # actividades-ps: Protocolos de Seguridad
 
-One directory per activity batch: `ps-3/` (Tema 3), `ps-4/` (Tema 4, not delivered yet). Each directory has its own `CLAUDE.md` when it needs one.
+Una carpeta por tema: `ps-3/` (Tema 3), `ps-4/` (Tema 4, sin entregar) y `ps-5/` (Tema 5, el trabajo en pareja sobre QUIC, con informe y diapositivas). Cada carpeta tiene su `CLAUDE.md` cuando lo necesita.
+
+## Las diapositivas
+
+`md-to-pdf` no hace diapositivas. Marp las genera desde un `.md` con `---` entre diapositivas, y usa el Chrome del sistema:
+
+```bash
+cd ps-5 && CHROME_PATH=/usr/bin/google-chrome npx -y @marp-team/marp-cli@latest diapositivas-quic-bolivar-dibo.md --pdf --allow-local-files
+```
+
+`--allow-local-files` deja a Marp leer `img/`. El PDF es una salida del build, como el del informe.
 
 ## Build a report PDF
 
