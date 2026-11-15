@@ -1,6 +1,6 @@
 # actividades-ps: Protocolos de Seguridad
 
-Una carpeta por tema: `ps-3/` (Tema 3), `ps-4/` (Tema 4, sin entregar) y `ps-5/` (Tema 5, el trabajo en pareja sobre QUIC, con informe y diapositivas). Cada carpeta tiene su `CLAUDE.md` cuando lo necesita.
+Una carpeta por tema: `ps-3/` (Tema 3), `ps-4/` (Tema 4), `ps-5/` (Tema 5, el trabajo en pareja sobre QUIC, con informe y diapositivas) y `ps-6/` (Tema 6). Cada carpeta tiene su `CLAUDE.md` cuando lo necesita.
 
 ## Las diapositivas
 
