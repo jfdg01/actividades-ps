@@ -12,25 +12,25 @@ cd ps-5 && CHROME_PATH=/usr/bin/google-chrome npx -y @marp-team/marp-cli@latest 
 
 `--allow-local-files` deja a Marp leer `img/`. El PDF es una salida del build y entra en git, como el del informe.
 
-## Build a report PDF
+## El PDF de un informe
 
-`md-to-pdf` (on `PATH`, repo `~/md-to-pdf`) turns a `.md` into a PDF next to it:
+`md-to-pdf` (en el `PATH`, repo `~/md-to-pdf`) convierte un `.md` en un PDF junto a él:
 
 ```bash
-md-to-pdf ps-3/informe-tema3-bolivar-dibo.md          # -> ps-3/informe-tema3-bolivar-dibo.pdf
-md-to-pdf ps-3/informe-tema3-bolivar-dibo.md -o /tmp/x.pdf   # test build, nothing lands in the repo
+md-to-pdf ps-3/informe-tema3-bolivar-dibo.md                 # -> ps-3/informe-tema3-bolivar-dibo.pdf
+md-to-pdf ps-3/informe-tema3-bolivar-dibo.md -o /tmp/x.pdf   # prueba, no deja nada en el repo
 ```
 
-The build reads only two things, both inside the report's directory:
+La build lee solo dos cosas, las dos en el directorio del informe:
 
-- The `.md` front matter: `title`, `subtitle`, `comment`, `author`, `logo`, `locale`.
-- `img/`: every `![...](img/…)` figure, plus the cover logo `img/logo_uja.webp`. A missing file breaks the build.
+- El front matter del `.md`: `title`, `subtitle`, `comment`, `author`, `logo`, `locale`.
+- `img/`: cada figura `![...](img/…)`, y el logo de la portada, `img/logo_uja.webp`. Un archivo que falta rompe la build.
 
-Nothing else is needed. `lab/` (certificates, keys, test page) is not read by the build. The `.md` only quotes `lab/ca_actividad1.crt` inside command examples.
+La build no lee `lab/` (certificados, claves, la página de prueba, las capturas de tráfico).
 
-Fonts ship with `md-to-pdf`. A fresh machine needs `bash ~/md-to-pdf/install.sh` once (`uv sync` + the `PATH` link) and the Pango libraries (`libpango-1.0-0`, `libpangoft2-1.0-0`).
+Las fuentes van con `md-to-pdf`. Una máquina nueva necesita `bash ~/md-to-pdf/install.sh` una vez (`uv sync` y el enlace del `PATH`), y las librerías de Pango (`libpango-1.0-0`, `libpangoft2-1.0-0`).
 
-## Rules
+## Las reglas
 
-- A figure in the report goes in `img/` and is referenced as `img/<name>.png`.
-- El PDF es una salida del build: se reconstruye desde el `.md` y no se edita. Entra en git junto a su `.md`, porque es lo que se entrega.
+- Una figura del informe va en `img/`, y el `.md` la nombra como `img/<nombre>.png`.
+- El PDF es una salida de la build: se reconstruye desde el `.md` y no se edita. Entra en git junto a su `.md`, porque es lo que se entrega.

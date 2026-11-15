@@ -6,6 +6,8 @@ Los informes de las actividades de la asignatura Protocolos de Seguridad (Univer
 |---|---|---|
 | Tema 3: Protocolos de capa de transporte | [`ps-3/informe-tema3-bolivar-dibo.md`](ps-3/informe-tema3-bolivar-dibo.md) | [PDF](ps-3/informe-tema3-bolivar-dibo.pdf) |
 | Tema 4: Protocolos de capa de aplicación | [`ps-4/informe-tema4-bolivar-dibo.md`](ps-4/informe-tema4-bolivar-dibo.md) | [PDF](ps-4/informe-tema4-bolivar-dibo.pdf) |
+| Tema 5: QUIC (informe) | [`ps-5/informe-quic-bolivar-dibo.md`](ps-5/informe-quic-bolivar-dibo.md) | [PDF](ps-5/informe-quic-bolivar-dibo.pdf) |
+| Tema 5: QUIC (diapositivas) | [`ps-5/diapositivas-quic-bolivar-dibo.md`](ps-5/diapositivas-quic-bolivar-dibo.md) | [PDF](ps-5/diapositivas-quic-bolivar-dibo.pdf) |
 
 ## El formato de los informes
 
@@ -15,4 +17,4 @@ Cada informe es un Markdown que [md-to-pdf](https://github.com/jfdg01/md-to-pdf)
 md-to-pdf ps-4/informe-tema4-bolivar-dibo.md
 ```
 
-El PDF sale junto al `.md`. La build lee solo el `.md` y la carpeta `img/` de su directorio.
+El PDF sale junto al `.md`. La build lee solo el `.md` y la carpeta `img/` de su directorio. Las diapositivas salen con Marp, y el comando está en `CLAUDE.md`.
