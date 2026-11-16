@@ -1,0 +1,189 @@
+sieving in progress (press Ctrl-C to pause)
+118 relations (118 full + 0 combined from 1427 partial), need 36446
+227 relations (225 full + 2 combined from 2869 partial), need 36446
+360 relations (352 full + 8 combined from 4223 partial), need 36446
+493 relations (477 full + 16 combined from 5650 partial), need 36446
+619 relations (597 full + 22 combined from 7035 partial), need 36446
+746 relations (713 full + 33 combined from 8407 partial), need 36446
+911 relations (860 full + 51 combined from 9833 partial), need 36446
+1054 relations (986 full + 68 combined from 11223 partial), need 36446
+1207 relations (1121 full + 86 combined from 12695 partial), need 36446
+1355 relations (1251 full + 104 combined from 14140 partial), need 36446
+1509 relations (1375 full + 134 combined from 15688 partial), need 36446
+1644 relations (1487 full + 157 combined from 17165 partial), need 36446
+1802 relations (1620 full + 182 combined from 18571 partial), need 36446
+1928 relations (1725 full + 203 combined from 19963 partial), need 36446
+2083 relations (1843 full + 240 combined from 21461 partial), need 36446
+2223 relations (1945 full + 278 combined from 22876 partial), need 36446
+2392 relations (2085 full + 307 combined from 24336 partial), need 36446
+2560 relations (2217 full + 343 combined from 25727 partial), need 36446
+2707 relations (2336 full + 371 combined from 27131 partial), need 36446
+2869 relations (2468 full + 401 combined from 28569 partial), need 36446
+3043 relations (2593 full + 450 combined from 30027 partial), need 36446
+3210 relations (2711 full + 499 combined from 31455 partial), need 36446
+3393 relations (2850 full + 543 combined from 32872 partial), need 36446
+3572 relations (2985 full + 587 combined from 34306 partial), need 36446
+3747 relations (3111 full + 636 combined from 35678 partial), need 36446
+3920 relations (3243 full + 677 combined from 37117 partial), need 36446
+4111 relations (3373 full + 738 combined from 38535 partial), need 36446
+4286 relations (3499 full + 787 combined from 39956 partial), need 36446
+4466 relations (3620 full + 846 combined from 41379 partial), need 36446
+4655 relations (3744 full + 911 combined from 42767 partial), need 36446
+4825 relations (3871 full + 954 combined from 44243 partial), need 36446
+4998 relations (3987 full + 1011 combined from 45709 partial), need 36446
+5202 relations (4124 full + 1078 combined from 47062 partial), need 36446
+5397 relations (4261 full + 1136 combined from 48492 partial), need 36446
+5589 relations (4396 full + 1193 combined from 49884 partial), need 36446
+5790 relations (4530 full + 1260 combined from 51275 partial), need 36446
+6009 relations (4664 full + 1345 combined from 52712 partial), need 36446
+6200 relations (4798 full + 1402 combined from 54117 partial), need 36446
+6417 relations (4923 full + 1494 combined from 55585 partial), need 36446
+6636 relations (5068 full + 1568 combined from 57030 partial), need 36446
+6833 relations (5190 full + 1643 combined from 58452 partial), need 36446
+7027 relations (5323 full + 1704 combined from 59832 partial), need 36446
+7251 relations (5463 full + 1788 combined from 61285 partial), need 36446
+7470 relations (5599 full + 1871 combined from 62723 partial), need 36446
+7682 relations (5711 full + 1971 combined from 64152 partial), need 36446
+7879 relations (5830 full + 2049 combined from 65500 partial), need 36446
+8074 relations (5949 full + 2125 combined from 66913 partial), need 36446
+8329 relations (6100 full + 2229 combined from 68332 partial), need 36446
+8545 relations (6220 full + 2325 combined from 69756 partial), need 36446
+8747 relations (6329 full + 2418 combined from 71199 partial), need 36446
+8980 relations (6462 full + 2518 combined from 72672 partial), need 36446
+9235 relations (6598 full + 2637 combined from 74162 partial), need 36446
+9470 relations (6723 full + 2747 combined from 75577 partial), need 36446
+9706 relations (6850 full + 2856 combined from 77104 partial), need 36446
+9917 relations (6977 full + 2940 combined from 78564 partial), need 36446
+10160 relations (7118 full + 3042 combined from 79938 partial), need 36446
+10381 relations (7238 full + 3143 combined from 81395 partial), need 36446
+10612 relations (7360 full + 3252 combined from 82795 partial), need 36446
+10849 relations (7490 full + 3359 combined from 84267 partial), need 36446
+11084 relations (7622 full + 3462 combined from 85663 partial), need 36446
+11322 relations (7745 full + 3577 combined from 87100 partial), need 36446
+11570 relations (7865 full + 3705 combined from 88490 partial), need 36446
+11803 relations (7998 full + 3805 combined from 89887 partial), need 36446
+12069 relations (8134 full + 3935 combined from 91293 partial), need 36446
+12309 relations (8259 full + 4050 combined from 92756 partial), need 36446
+12573 relations (8402 full + 4171 combined from 94162 partial), need 36446
+12853 relations (8540 full + 4313 combined from 95644 partial), need 36446
+13107 relations (8670 full + 4437 combined from 97054 partial), need 36446
+13350 relations (8791 full + 4559 combined from 98470 partial), need 36446
+13605 relations (8933 full + 4672 combined from 99857 partial), need 36446
+13873 relations (9064 full + 4809 combined from 101279 partial), need 36446
+14122 relations (9181 full + 4941 combined from 102625 partial), need 36446
+14385 relations (9297 full + 5088 combined from 104026 partial), need 36446
+14675 relations (9449 full + 5226 combined from 105496 partial), need 36446
+14915 relations (9560 full + 5355 combined from 106952 partial), need 36446
+15213 relations (9716 full + 5497 combined from 108439 partial), need 36446
+15511 relations (9856 full + 5655 combined from 109831 partial), need 36446
+15786 relations (9984 full + 5802 combined from 111252 partial), need 36446
+16083 relations (10137 full + 5946 combined from 112683 partial), need 36446
+16328 relations (10242 full + 6086 combined from 114141 partial), need 36446
+16610 relations (10372 full + 6238 combined from 115572 partial), need 36446
+16881 relations (10491 full + 6390 combined from 116985 partial), need 36446
+17157 relations (10620 full + 6537 combined from 118378 partial), need 36446
+17451 relations (10771 full + 6680 combined from 119847 partial), need 36446
+17728 relations (10895 full + 6833 combined from 121244 partial), need 36446
+18008 relations (11029 full + 6979 combined from 122698 partial), need 36446
+18295 relations (11152 full + 7143 combined from 124144 partial), need 36446
+18557 relations (11272 full + 7285 combined from 125536 partial), need 36446
+18853 relations (11401 full + 7452 combined from 126961 partial), need 36446
+19253 relations (11573 full + 7680 combined from 129158 partial), need 36446
+19556 relations (11712 full + 7844 combined from 130511 partial), need 36446
+19822 relations (11827 full + 7995 combined from 131840 partial), need 36446
+20116 relations (11955 full + 8161 combined from 133268 partial), need 36446
+20389 relations (12073 full + 8316 combined from 134639 partial), need 36446
+20691 relations (12196 full + 8495 combined from 136110 partial), need 36446
+21027 relations (12328 full + 8699 combined from 137542 partial), need 36446
+21339 relations (12444 full + 8895 combined from 138968 partial), need 36446
+21661 relations (12584 full + 9077 combined from 140357 partial), need 36446
+21941 relations (12701 full + 9240 combined from 141791 partial), need 36446
+22237 relations (12831 full + 9406 combined from 143208 partial), need 36446
+22546 relations (12951 full + 9595 combined from 144642 partial), need 36446
+22847 relations (13074 full + 9773 combined from 146122 partial), need 36446
+23151 relations (13208 full + 9943 combined from 147497 partial), need 36446
+23484 relations (13365 full + 10119 combined from 148978 partial), need 36446
+23826 relations (13491 full + 10335 combined from 150419 partial), need 36446
+24135 relations (13611 full + 10524 combined from 151826 partial), need 36446
+24451 relations (13737 full + 10714 combined from 153248 partial), need 36446
+24780 relations (13873 full + 10907 combined from 154663 partial), need 36446
+25111 relations (14008 full + 11103 combined from 156073 partial), need 36446
+25438 relations (14139 full + 11299 combined from 157476 partial), need 36446
+25756 relations (14266 full + 11490 combined from 158870 partial), need 36446
+26090 relations (14388 full + 11702 combined from 160303 partial), need 36446
+26425 relations (14523 full + 11902 combined from 161724 partial), need 36446
+26762 relations (14646 full + 12116 combined from 163140 partial), need 36446
+27088 relations (14772 full + 12316 combined from 164508 partial), need 36446
+27441 relations (14911 full + 12530 combined from 165938 partial), need 36446
+27786 relations (15051 full + 12735 combined from 167370 partial), need 36446
+28119 relations (15192 full + 12927 combined from 168793 partial), need 36446
+28497 relations (15336 full + 13161 combined from 170227 partial), need 36446
+28829 relations (15465 full + 13364 combined from 171641 partial), need 36446
+29151 relations (15577 full + 13574 combined from 173068 partial), need 36446
+29487 relations (15702 full + 13785 combined from 174503 partial), need 36446
+29825 relations (15843 full + 13982 combined from 175903 partial), need 36446
+30175 relations (15973 full + 14202 combined from 177307 partial), need 36446
+30511 relations (16096 full + 14415 combined from 178790 partial), need 36446
+30853 relations (16217 full + 14636 combined from 180212 partial), need 36446
+31199 relations (16353 full + 14846 combined from 181616 partial), need 36446
+31559 relations (16486 full + 15073 combined from 183032 partial), need 36446
+31901 relations (16617 full + 15284 combined from 184462 partial), need 36446
+32229 relations (16735 full + 15494 combined from 185820 partial), need 36446
+32595 relations (16862 full + 15733 combined from 187249 partial), need 36446
+32957 relations (16995 full + 15962 combined from 188676 partial), need 36446
+33344 relations (17146 full + 16198 combined from 190009 partial), need 36446
+33705 relations (17276 full + 16429 combined from 191475 partial), need 36446
+34064 relations (17414 full + 16650 combined from 192891 partial), need 36446
+34426 relations (17546 full + 16880 combined from 194240 partial), need 36446
+34808 relations (17691 full + 17117 combined from 195743 partial), need 36446
+35167 relations (17820 full + 17347 combined from 197163 partial), need 36446
+35573 relations (17975 full + 17598 combined from 198581 partial), need 36446
+35935 relations (18093 full + 17842 combined from 199993 partial), need 36446
+36330 relations (18246 full + 18084 combined from 201406 partial), need 36446
+36716 relations (18391 full + 18325 combined from 202835 partial), need 36446
+Msieve v. 1.53 (SVN 1005)
+Sun Nov 15 22:41:11 2026
+random seeds: bc6e23fc f7a958c2
+factoring 97399399025648132379200632008447025794235248006373556755000671559001683498537 (77 digits)
+searching for 15-digit factors
+commencing quadratic sieve (77-digit input)
+using multiplier of 1
+using generic 32kb sieve core
+sieve interval: 12 blocks of size 32768
+processing polynomials in batches of 17
+using a sieve bound of 924097 (36350 primes)
+using large prime bound of 92409700 (26 bits)
+using trial factoring cutoff of 26 bits
+polynomial 'A' values have 10 factors
+36716 relations (18391 full + 18325 combined from 202835 partial), need 36446
+begin with 221226 relations
+reduce to 52779 relations in 2 passes
+attempting to read 52779 relations
+recovered 52779 relations
+recovered 44302 polynomials
+attempting to build 36716 cycles
+found 36716 cycles in 1 passes
+distribution of cycle lengths:
+   length 1 : 18391
+   length 2 : 18325
+largest cycle: 2 relations
+matrix is 36350 x 36716 (5.2 MB) with weight 1079709 (29.41/col)
+sparse part has weight 1079709 (29.41/col)
+filtering completed in 3 passes
+matrix is 26538 x 26600 (4.1 MB) with weight 865142 (32.52/col)
+sparse part has weight 865142 (32.52/col)
+saving the first 48 matrix rows for later
+matrix includes 64 packed rows
+matrix is 26490 x 26600 (2.8 MB) with weight 653341 (24.56/col)
+sparse part has weight 464432 (17.46/col)
+commencing Lanczos iteration
+memory use: 2.8 MB
+lanczos halted after 420 iterations (dim = 26486)
+recovered 14 nontrivial dependencies
+p39 factor: 306987831065370542406424007106753576023
+p39 factor: 317274462273091628471429937331739406719
+elapsed time 00:02:07
+sieving complete, commencing postprocessing
+real	2m7.619s
+user	0m0.022s
+sys	0m0.031s

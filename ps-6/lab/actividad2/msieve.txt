@@ -1,0 +1,26 @@
+$ wine msieve153.exe -v -s nuevo.dat 97399399025648132379200632008447025794235248006373556755000671559001683498537
+Msieve v. 1.53 (SVN 1005)
+Sun Nov 15 22:41:11 2026
+random seeds: bc6e23fc f7a958c2
+factoring 97399399025648132379200632008447025794235248006373556755000671559001683498537 (77 digits)
+searching for 15-digit factors
+commencing quadratic sieve (77-digit input)
+using multiplier of 1
+using generic 32kb sieve core
+sieve interval: 12 blocks of size 32768
+processing polynomials in batches of 17
+using a sieve bound of 924097 (36350 primes)
+using large prime bound of 92409700 (26 bits)
+using trial factoring cutoff of 26 bits
+polynomial 'A' values have 10 factors
+sieving in progress (press Ctrl-C to pause)
+36716 relations (18391 full + 18325 combined from 202835 partial), need 36446
+sieving complete, commencing postprocessing
+[...]
+commencing Lanczos iteration
+memory use: 2.8 MB
+lanczos halted after 420 iterations (dim = 26486)
+recovered 14 nontrivial dependencies
+p39 factor: 306987831065370542406424007106753576023
+p39 factor: 317274462273091628471429937331739406719
+elapsed time 00:02:07

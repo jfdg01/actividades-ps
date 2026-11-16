@@ -9,6 +9,7 @@ Los informes de las actividades de la asignatura Protocolos de Seguridad (Univer
 | Tema 5: QUIC (informe) | [`ps-5/informe-quic-bolivar-dibo.md`](ps-5/informe-quic-bolivar-dibo.md) | [PDF](ps-5/informe-quic-bolivar-dibo.pdf) |
 | Tema 5: QUIC (diapositivas) | [`ps-5/diapositivas-quic-bolivar-dibo.md`](ps-5/diapositivas-quic-bolivar-dibo.md) | [PDF](ps-5/diapositivas-quic-bolivar-dibo.pdf) |
 | Tema 6: sslstrip y HSTS (actividad 1) | [`ps-6/informe-tema6-actividad1-bolivar-dibo.md`](ps-6/informe-tema6-actividad1-bolivar-dibo.md) | [PDF](ps-6/informe-tema6-actividad1-bolivar-dibo.pdf) |
+| Tema 6: ataque a un certificado débil (actividad 2) | [`ps-6/informe-tema6-actividad2-bolivar-dibo.md`](ps-6/informe-tema6-actividad2-bolivar-dibo.md) | [PDF](ps-6/informe-tema6-actividad2-bolivar-dibo.pdf) |
 
 ## El formato de los informes
 
