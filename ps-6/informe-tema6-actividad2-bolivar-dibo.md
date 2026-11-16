@@ -11,7 +11,7 @@ locale: es
 
 Un mensaje está cifrado con una clave pública RSA de 256 bits. La clave pública da el módulo *n* = *p* · *q* y el exponente *e*. Quien conoce *p* y *q* calcula el exponente privado *d*, el inverso de *e* módulo (*p* − 1)(*q* − 1), y descifra el mensaje.
 
-Los pasos corren en Ubuntu con OpenSSL 3.0.13. `msieve153.exe` es un programa de Windows, y corre con `wine`. Las capturas son la salida real de cada comando. El script `lab/actividad2/capturas.py` repite los comandos y dibuja las figuras.
+Los pasos corren en Ubuntu con OpenSSL 3.0.13. `msieve153.exe` es un programa de Windows, y corre con `wine`. Las figuras muestran la salida de cada comando.
 
 ## Paso 1: el módulo y el exponente
 
@@ -33,13 +33,13 @@ msieve usa la criba cuadrática y tarda 2 minutos y 7 segundos. Los dos factores
 
 El binario `get_priv_key` del RAR necesita `libcrypto.so.1.0.0`, y Ubuntu ya no la trae. El código fuente tampoco compila con OpenSSL 3: escribe directamente en los campos de la estructura `RSA`, y desde OpenSSL 1.1 esa estructura es opaca ([[fig-4-1]]). `lab/actividad2/get_priv_key_openssl3.c` cambia solo esas ocho asignaciones por las funciones `RSA_set0_key`, `RSA_set0_factors` y `RSA_set0_crt_params`.
 
-El programa recibe *p*, *q* y *e*, y escribe la clave privada en `claveprivada.pem`. La última línea de la [[fig-4-1]] comprueba el resultado: la clave pública que sale de `claveprivada.pem` es idéntica a `rsa_clavepublica.pem`.
+El programa recibe *p*, *q* y *e*, y escribe la clave privada por la salida estándar. El comando la redirige a `claveprivada.pem`. La última línea de la [[fig-4-1]] comprueba el resultado: la clave pública que sale de `claveprivada.pem` es idéntica a `rsa_clavepublica.pem`.
 
 ## Paso 4: el mensaje
 
 ![El mensaje descifrado con la clave privada](img/a2-descifrado.png)
 
-`openssl rsautl` descifra el mensaje con la clave privada ([[fig-5-1]]). OpenSSL 3 avisa de que `rsautl` está obsoleto, y `pkeyutl` da el mismo resultado. El mensaje cifrado es:
+`openssl rsautl` descifra el mensaje con la clave privada ([[fig-5-1]]). OpenSSL 3 avisa de que `rsautl` está obsoleto, y `pkeyutl` da el mismo resultado. El mensaje descifrado es:
 
 **`FLAG:9cb991be8780`**
 

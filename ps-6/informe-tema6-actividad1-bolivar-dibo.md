@@ -11,15 +11,15 @@ locale: es
 
 Un vecino hace un ataque Man-in-the-Middle (MitM) con bettercap 1.6.2, y se pone entre la víctima y los servidores. La víctima escribe cada dirección con `http://`, nunca con `https://`. Las capturas vienen del enunciado de la actividad. La salida de bettercap de la [[fig-6-1]] lleva la marca de tiempo `1573586663677`, el 12 de noviembre de 2019. Las respuestas no repiten el ataque. Lo explican con la especificación de HSTS [1], las listas de precarga de los navegadores de esa fecha y el código de bettercap 1.6.2 [2].
 
-HSTS (HTTP Strict Transport Security) es la defensa de todas las preguntas. Un servidor envía la cabecera `Strict-Transport-Security` por HTTPS. Desde ese momento, el navegador cambia a HTTPS cada URL de ese host antes de enviarla [1, §8.3]. Si el certificado falla, el navegador corta la conexión y no deja continuar al usuario [1, §12.1]. El navegador conoce la política de un host de dos formas: por una visita anterior (HSTS dinámico) o por la lista de precarga que trae el propio navegador.
+HSTS (HTTP Strict Transport Security) es la defensa de todas las preguntas. Un servidor envía la cabecera `Strict-Transport-Security` por HTTPS. Desde ese momento, el navegador cambia a HTTPS cada URL de ese host antes de enviarla [1, §8.3]. Si el certificado falla, el navegador corta la conexión y no deja continuar al usuario [1, §8.4]. El navegador conoce la política de un host de dos formas: por una visita anterior (HSTS dinámico) o por la lista de precarga que trae el propio navegador.
 
 ## Pregunta 1: Twitter en Chrome
 
 ![Chrome rechaza `twitter.com` durante el ataque. Captura del enunciado](img/chrome-twitter.png)
 
-**¿Por qué no he podido acceder a Twitter?** La [[fig-2-1]] muestra el error `NET::ERR_CERT_INVALID`. Chrome no pidió la página por HTTP. Abrió una conexión HTTPS con `twitter.com`, y bettercap respondió con un certificado falso, firmado por su propia autoridad de certificación (`bettercap-ca.pem`, en la [[fig-6-2]]). Chrome no confía en esa autoridad.
+**¿Por qué no he podido acceder a Twitter?** La [[fig-2-1]] muestra el error `NET::ERR_CERT_INVALID`. Chrome no pidió la página por HTTP. Abrió una conexión HTTPS con `twitter.com`, y bettercap respondió con un certificado falso, que genera con su propia autoridad de certificación (`bettercap-ca.pem`, en la [[fig-6-2]]). Chrome no puede procesar ese certificado, lo marca como inválido y corta la conexión.
 
-**¿Qué ha hecho el navegador?** La lista de precarga HSTS de Chrome de noviembre de 2019 incluye `twitter.com` con el modo `force-https` [3]. Por eso Chrome cambió `http://twitter.com` a `https://twitter.com` antes de enviar nada, y bettercap nunca vio una petición HTTP que pudiera reescribir. La página de error no ofrece el enlace para continuar al sitio, porque en un host HSTS el usuario no tiene esa opción [1, §12.1]. Chrome cortó la conexión antes de enviar ningún dato.
+**¿Qué ha hecho el navegador?** La lista de precarga HSTS de Chrome de noviembre de 2019 incluye `twitter.com` con el modo `force-https` [3]. Por eso Chrome cambió `http://twitter.com` a `https://twitter.com` antes de enviar nada, y bettercap nunca vio una petición HTTP que pudiera reescribir. La página de error no ofrece el enlace para continuar, porque Chrome no deja saltar un certificado inválido. El error no es la prueba de HSTS. La prueba es que Chrome fue por HTTPS, aunque la víctima escribió `http://`.
 
 ## Pregunta 2: BBVA en Chrome
 
@@ -46,7 +46,7 @@ Después, la víctima pide `http://wwwww.bbva.es`. bettercap deshace el cambio d
 
 **¿Por qué no he podido acceder?** El error de la [[fig-4-1]] es el mismo de la pregunta 1. Chrome abrió una conexión HTTPS, bettercap presentó su certificado falso, y Chrome cortó la conexión.
 
-**¿Qué ha hecho el navegador?** En la visita anterior, sin ataque, `www.bbva.es` respondió por HTTPS con la cabecera `Strict-Transport-Security`. Chrome guardó esa política durante el tiempo de su `max-age` [1, §8.1]. Después, la víctima escribe `http://www.bbva.es`, y Chrome cambia la URL a HTTPS antes de enviarla [1, §8.3]. bettercap no recibe ninguna petición HTTP, así que no puede quitar el HTTPS ni cambiar el host. Solo le queda presentar un certificado falso, y HSTS no deja al usuario aceptarlo [1, §12.1].
+**¿Qué ha hecho el navegador?** En la visita anterior, sin ataque, `www.bbva.es` respondió por HTTPS con la cabecera `Strict-Transport-Security`. Chrome guardó esa política durante el tiempo de su `max-age` [1, §8.1]. Después, la víctima escribe `http://www.bbva.es`, y Chrome cambia la URL a HTTPS antes de enviarla [1, §8.3]. bettercap no recibe ninguna petición HTTP, así que no puede quitar el HTTPS ni cambiar el host. Solo le queda presentar su certificado falso, y Chrome lo rechaza igual que en la pregunta 1. Aquí también, la prueba de HSTS es que la petición salió por HTTPS.
 
 **La diferencia con la pregunta 2.** El sitio es el mismo, y cambia el estado del navegador. En la pregunta 2, Chrome no tenía ninguna política para BBVA, y bettercap borraba la cabecera HSTS de cada respuesta. En la pregunta 3, Chrome tenía la política de una visita limpia. El resultado es el mismo de Twitter en la pregunta 1, pero la política tiene otro origen: la lista de precarga en Twitter, y la visita anterior (HSTS dinámico) en BBVA.
 
@@ -56,7 +56,7 @@ Después, la víctima pide `http://wwwww.bbva.es`. bettercap deshace el cambio d
 
 **¿Por qué sí he podido acceder?** Firefox no aplicó ninguna política HSTS a `twitter.com`. Su primera petición salió por HTTP, y bettercap hizo el mismo ataque de la pregunta 2. En la [[fig-5-1]], el host es `wwwww.twitter.com` y el candado aparece tachado. La salida de bettercap de la [[fig-6-1]] confirma el navegador: la víctima pide `http://detectportal.firefox.com/success.txt`, la comprobación de portal cautivo de Firefox.
 
-El Firefox de la víctima es nuevo, así que no tiene ninguna política dinámica. La única defensa posible era su lista de precarga. La lista de Firefox del 11 de noviembre de 2019 incluye `twitter.com` [4], así que un Firefox al día habría dado un error como el de la pregunta 1. La captura muestra que esa lista no actuó. Una causa compatible con la captura es una lista caducada. Firefox fija la caducidad de su lista 18 semanas después de generarla [5], y no consulta una lista caducada [6]. Un instalador antiguo trae una lista caducada, y ese Firefox no protege ningún host precargado.
+El Firefox de la víctima está recién instalado, así que no tiene ninguna política dinámica: nunca visitó Twitter y nunca recibió su cabecera HSTS. Tampoco lo protegió la lista de precarga, y la primera petición salió por HTTP. Una explicación posible es una lista caducada. La lista de Firefox del 11 de noviembre de 2019 incluye `twitter.com` [4], pero Firefox fija la caducidad de su lista 18 semanas después de generarla [5] y no consulta una lista caducada [6].
 
 **La diferencia con la pregunta 1.** El sitio y el ataque son los mismos, y cambia el navegador. Chrome traía `twitter.com` en una lista de precarga activa, y forzó HTTPS desde la primera petición. En Firefox, la lista no actuó, y no había ninguna visita anterior. Sin ninguna política HSTS, el primer acceso es igual que en la pregunta 2. La lista actual de Firefox incluye `twitter.com` con sus subdominios [7], así que un Firefox al día bloquea este ataque.
 

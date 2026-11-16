@@ -34,3 +34,4 @@ Las fuentes van con `md-to-pdf`. Una máquina nueva necesita `bash ~/md-to-pdf/i
 
 - Una figura del informe va en `img/`, y el `.md` la nombra como `img/<nombre>.png`.
 - El PDF es una salida de la build: se reconstruye desde el `.md` y no se edita. Entra en git junto a su `.md`, porque es lo que se entrega.
+- `ps-6/entrega/` tiene una copia de cada PDF que se entrega del Tema 6. Una build nueva de un informe copia su PDF ahí, o la copia se queda vieja.
