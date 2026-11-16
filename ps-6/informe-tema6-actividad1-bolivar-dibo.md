@@ -90,18 +90,18 @@ El ataque necesita una primera petición por HTTP. Si el navegador conoce la pol
 
 ## Referencias
 
-[1] J. Hodges, C. Jackson y A. Barth, "HTTP Strict Transport Security (HSTS)", RFC 6797, IETF, nov. 2012. [En línea]. Disponible: <https://www.rfc-editor.org/rfc/rfc6797>. [Accedido: 15-nov-2026].
+[1] J. Hodges, C. Jackson y A. Barth, "HTTP Strict Transport Security (HSTS)", RFC 6797, IETF, nov. 2012. [En línea]. Disponible: <https://www.rfc-editor.org/rfc/rfc6797>.
 
-[2] S. Margaritelli, "lib/bettercap/proxy/http/sslstrip/strip.rb" y "lib/bettercap/network/servers/dnsd.rb", *bettercap* 1.6.2, RubyGems. [En línea]. Disponible: <https://rubygems.org/gems/bettercap/versions/1.6.2>. [Accedido: 15-nov-2026].
+[2] S. Margaritelli, "lib/bettercap/proxy/http/sslstrip/strip.rb" y "lib/bettercap/network/servers/dnsd.rb", *bettercap* 1.6.2, RubyGems. [En línea]. Disponible: <https://rubygems.org/gems/bettercap/versions/1.6.2>.
 
-[3] The Chromium Authors, "net/http/transport_security_state_static.json", *Chromium*, commit `28bd993`, 11-nov-2019. [En línea]. Disponible: <https://github.com/chromium/chromium/blob/28bd993ae928a571091fab81f8d1532e9a3d2d30/net/http/transport_security_state_static.json>. [Accedido: 15-nov-2026].
+[3] The Chromium Authors, "net/http/transport_security_state_static.json", *Chromium*, commit `28bd993`, 11-nov-2019. [En línea]. Disponible: <https://github.com/chromium/chromium/blob/28bd993ae928a571091fab81f8d1532e9a3d2d30/net/http/transport_security_state_static.json>.
 
-[4] Mozilla, "security/manager/ssl/nsSTSPreloadList.inc", *Firefox*, commit `e3675b8`, 11-nov-2019. [En línea]. Disponible: <https://github.com/mozilla-firefox/firefox/blob/e3675b8c92cb2a7c6b209b025710af7c022710f8/security/manager/ssl/nsSTSPreloadList.inc>. [Accedido: 15-nov-2026].
+[4] Mozilla, "security/manager/ssl/nsSTSPreloadList.inc", *Firefox*, commit `e3675b8`, 11-nov-2019. [En línea]. Disponible: <https://github.com/mozilla-firefox/firefox/blob/e3675b8c92cb2a7c6b209b025710af7c022710f8/security/manager/ssl/nsSTSPreloadList.inc>.
 
-[5] Mozilla, "taskcluster/docker/periodic-updates/scripts/getHSTSPreloadList.js", *Firefox*, commit `e3675b8`, 11-nov-2019. [En línea]. Disponible: <https://github.com/mozilla-firefox/firefox/blob/e3675b8c92cb2a7c6b209b025710af7c022710f8/taskcluster/docker/periodic-updates/scripts/getHSTSPreloadList.js>. [Accedido: 15-nov-2026].
+[5] Mozilla, "taskcluster/docker/periodic-updates/scripts/getHSTSPreloadList.js", *Firefox*, commit `e3675b8`, 11-nov-2019. [En línea]. Disponible: <https://github.com/mozilla-firefox/firefox/blob/e3675b8c92cb2a7c6b209b025710af7c022710f8/taskcluster/docker/periodic-updates/scripts/getHSTSPreloadList.js>.
 
-[6] Mozilla, "security/manager/ssl/nsSiteSecurityService.cpp", *Firefox*, commit `e3675b8`, 11-nov-2019. [En línea]. Disponible: <https://github.com/mozilla-firefox/firefox/blob/e3675b8c92cb2a7c6b209b025710af7c022710f8/security/manager/ssl/nsSiteSecurityService.cpp>. [Accedido: 15-nov-2026].
+[6] Mozilla, "security/manager/ssl/nsSiteSecurityService.cpp", *Firefox*, commit `e3675b8`, 11-nov-2019. [En línea]. Disponible: <https://github.com/mozilla-firefox/firefox/blob/e3675b8c92cb2a7c6b209b025710af7c022710f8/security/manager/ssl/nsSiteSecurityService.cpp>.
 
-[7] Mozilla, "security/manager/ssl/nsSTSPreloadList.inc", *Firefox*, rama `main`. [En línea]. Disponible: <https://github.com/mozilla-firefox/firefox/blob/main/security/manager/ssl/nsSTSPreloadList.inc>. [Accedido: 15-nov-2026].
+[7] Mozilla, "security/manager/ssl/nsSTSPreloadList.inc", *Firefox*, rama `main`. [En línea]. Disponible: <https://github.com/mozilla-firefox/firefox/blob/main/security/manager/ssl/nsSTSPreloadList.inc>.
 
-[8] L. Nve, "SSLStrip+: SSLStrip version to defeat HSTS", GitHub. [En línea]. Disponible: <https://github.com/LeonardoNve/sslstrip2>. [Accedido: 15-nov-2026].
+[8] L. Nve, "SSLStrip+: SSLStrip version to defeat HSTS", GitHub. [En línea]. Disponible: <https://github.com/LeonardoNve/sslstrip2>.
